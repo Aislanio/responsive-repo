@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Simonetta:ital@1&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+h1,h2{
+    font-family: 'Raleway', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    width: 100%;
+    height: 120px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+header  h1{
+    font-family: 'Raleway', sans-serif;
+}
+header ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+header ul li{
+    margin: 5px;
+    font-family: 'Simonetta', cursive;
+}
+
+header ul li a{
+    color: black;
+    text-decoration: none;
+    font-family: 'Simonetta', cursive;
+}
+header ul li a:hover{
+    color: rgb(163,149,235);
+}
+header ul li svg{
+    width: 100%;
+    max-width: 50px;
+    cursor: pointer;
+}
+header ul li svg:hover g{
+    fill:rgb(163,149,235);
+}
+header ul li svg g{
+    transition: all 3s ease-out;
+    animation: colorxd 10s infinite;
+}
+main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+main section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+main  .home{
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 487px;
+    margin-bottom: 60px;
+    margin-top: 70px;
+}
+main  .home .icons{
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    align-items: center;
+    justify-content: center;
+}
+main  .home .icons svg{
+    width: 60px;
+    fill:rgb(163,149,235);
+    transition: all 3s ease-out;
+    animation: colorxd 10s infinite;
+}
+main  .home .icons a{
+    width: 70px;
+    height: 73px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main  .home .icons a:hover{
+    background: #E8F6EF;
+    border-radius: 35px;
+}
+main .home .introduçao{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.introduçao .text{
+    width: 50%;
+    height: auto;   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}   
+.introduçao .text  h1{
+    font-size: 3.2rem;
+    font-family: 'Raleway', sans-serif;
+}
+.introduçao .text p{
+    font-size: 2rem;
+    font-family: 'Simonetta', cursive;
+}
+.Buttoncontact{
+    width: 137px;
+    border-radius: 5px;
+    height: 56px;
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    background: rgb(108,85,224);
+    margin-top: 38px;
+}
+.Buttoncontact img{
+    width: 100%;
+    max-width: 55px;
+
+}
+.Buttoncontact:hover img{
+    animation: aviao  2s reverse;
+    transition: all 0.5s ;
+}
+.introduçao .img{
+    flex: 1;
+}
+.introduçao .img svg{
+    width: 339px;
+}
+.introduçao .img svg g{
+    transition: all 3s ease-out;
+    animation: colorxd 10s infinite;
+    
+}
+.introduçao .img .home-Perfil{
+    width: 100%;
+}
+
+
+.about{
+    flex-direction: column;
+    text-align: center;
+
+}
+h2{
+    font-size: 3rem;
+    font-family: 'Simonetta', cursive;
+}
+.about article{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.about .img{
+    width: 30%;
+    height: auto;
+}
+.about .img svg {
+    
+}
+.about .img img{
+    width: 100%;
+
+}
+.aboutMe{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.aboutMe p{
+    font-size: 1.4rem;
+}
+.aboutMe div{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aboutMe div span{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+.aboutMe div span strong{
+    font-size: 50px;
+}
+.skills{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.skills .menu{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.skills .menu .menu-toglle{
+    width: 25%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.skills .menu .menu-toglle:hover{
+    transform: translateY(-10px);
+    border-radius: 1em;
+     box-shadow: black 0.3em 0.3em 0.3em;
+    transition: all  1s;
+
+}
+.skills .menu .menu-toglle div{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+
+}
+.skills .menu .menu-toglle div h3{
+
+}
+.skills .menu .menu-toglle div img{
+    width: 100%;
+    max-width: 100px;
+}
+.skills .menu .menu-toglle div span{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    width: 20%;
+    color: rgb(108,85,224);
+}
+.skills .menu .menu-toglle div p{
+    font-size: 1.7rem;
+    color: rgb(108,85,224);
+    margin-left: 20px;
+}
+ .of ul{
+    display: none;
+}
+.on div p{
+    transform: rotate(180deg);
+    transition:transform 1s;
+}
+.of div p{
+    transform: rotate(0deg);
+    transition:transform 1s;
+}
+
+.on  ul{
+    display: flex;
+    flex-direction: column;
+}
+.skills .menu .menu-toglle ul li{
+    margin: 5px;
+}
+/*=============Animação==========*/
+@keyframes colorxd{
+    from{
+        fill: rgb(163,149,235);
+    }
+    0%{
+        fill:coral; 
+    }
+    10%{
+        fill: burlywood;
+    }
+    20%{
+        fill: cornsilk;
+    }
+    30%{
+        fill: dodgerblue;
+    }
+    40%{
+        fill: #79B4B7;
+    }
+    50%{
+        fill:chocolate;
+    }
+    to{
+        fill: #FFB344;
+    }
+}
+@keyframes aviao{
+    to{
+       transform: translateX(17px);
+        transform: translateY(-22px);
+    }
+    from{
+        transform: translateX(0px);
+        transform: translateY(0px);
+    }
+}
